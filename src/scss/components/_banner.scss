@@ -1,0 +1,59 @@
+.banner {
+  margin-top: 30px;
+  &__title {
+    font-family: $font_Heraclito;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    color:$main_blue;
+    margin-bottom: 30px;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: $grey_dark;
+    //padding-left: 20px;
+    margin-bottom: 32px;
+    font-family: 'Lato', sans-serif;
+    &--center {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    span {
+      display: inline-block;
+      width: 25px;
+    }
+  }
+  &__more-info {
+    // font-family: $font_Heraclito;
+    // font-weight: 600;
+    // font-size: 14px;
+    // text-transform: uppercase;
+    // display: flex;
+    // align-items: center;
+    @include text-button;
+    cursor: pointer;
+  }
+  &__icon {
+    width: 12.48px;
+    height: 12.48px;
+    
+  }
+  &__picture {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 32px;
+    margin-bottom: 15px;
+    @media screen  and (min-width: 768px) {
+      margin-left: 0;
+      margin-right: 0; 
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(49, 49, 49, 0.2), rgba(49, 49, 49, 0.2)), url(main2.png);
+    
+  }
+}

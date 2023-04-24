@@ -1,0 +1,119 @@
+
+
+@mixin solid-button() {
+  background-color: $main_blue;
+  color: $white;
+  border-radius: 12px;
+  transition: all .3s ease-in-out, border .3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: $font_Heraclito;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #19768B;;
+  }
+  
+  &:focus {
+    background-color: #145E6F;  
+  }
+
+  &:active {
+    background-color: #62B3C6;
+  }
+
+}
+  
+@mixin outlined-button() {
+  color: $main_blue;
+  border-radius: 12px;
+  border: 2px solid $main_blue;
+  transition: color .3s ease-in-out, border .3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: $font_Heraclito;
+  font-weight: 600;
+ 
+  &:hover {
+    color: #19768B;
+    border-color: #19768B;
+    fill: #19768B;
+  }
+
+  &:focus {
+    color: #145E6F;
+    border-color: #145E6F;
+    fill: #145E6F;
+  }
+
+  &:active {           
+    color: #62B3C6;
+    border-color: #62B3C6;
+    fill: #62B3C6;
+  }
+}
+
+
+@mixin text-button() {
+  color:#000000; 
+  transition: color .3s ease-in-out, border .3s ease-in-out;
+  display: flex;
+  //justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: $font_Heraclito;
+  font-weight: 600;
+ 
+  &:hover {
+    color: #19768B;
+    fill: #19768B;
+  }
+
+  &:focus {
+    color: #145E6F;
+    fill: #145E6F;
+  }
+
+  &:active {           
+    color: #62B3C6;
+    fill: #62B3C6;
+  }
+}
+
+@mixin link-button() {
+  color: #1F93AE; 
+  transition: all .3s ease-in-out, border .3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: $font_Heraclito;
+  font-weight: 500;
+  border-bottom: 1px solid #1F93AE;
+ 
+  &:hover {
+    color: #19768B;
+    border-bottom-color: #19768B;
+  }
+
+  &:focus {
+    color: #145E6F;
+    border-bottom-color: #145E6F;
+  }
+
+  &:active {           
+    color: #62B3C6;  
+    border-bottom-color: #62B3C6;
+  }
+}
+
+

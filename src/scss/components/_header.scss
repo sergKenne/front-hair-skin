@@ -1,21 +1,58 @@
 
 .header {
-           
+          
+  padding-top: 14px; 
+  @media screen  and (min-width: 1280px) {
+    padding-top: 17px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__phone {
+    color: $main_blue;
+    width: 178px;
+    height: 36px;
+    border: 2px solid $main_blue;
+    border-radius: 12px;
+    font-family: $font_Heraclito;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    display: none;
+    @media screen  and (min-width: 1280px) {
+      display: inline-block;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__logo-icon {
+    display: none;
+    @media screen  and (min-width: 768px) {
+      display: inline-block;
+    }
+  }
   &__logo-text {
     width: 106.78px;
     height: 35.6px;
   }
+  &__btn-group {
+    display: flex;
+    align-items: center;
+  }
   &__btn {
-    background: $main_blue;
-    color: $white;
-    border-radius: 12px;
+    @include solid-button;
     width: 264px;
     height: 36px;
     line-height: 36px;
-    text-align: center;
-    font-family: $font_Heraclito;
-    font-weight: 600;
-    font-size: 14px;
+    margin-left: 12px;
+    display: none;
+    @media screen  and (min-width: 768px) {
+      display: inline-block;
+    }
   }
   &__burger, &__call {
     width: 30px;
@@ -27,7 +64,29 @@
     align-items: center;
   }
   &__call {
+    //@include outlined-button;
     border: 1.5px solid $main_blue;
+    border-radius: 9px;
+    &:hover {
+      color: #19768B;
+      border-color: #19768B;
+      fill: #19768B;
+    }
+  
+    &:focus {
+      color: #145E6F;
+      border-color: #145E6F;
+      fill: #145E6F;
+    }
+  
+    &:active {           
+      color: #62B3C6;
+      border-color: #62B3C6;
+      fill: #62B3C6;
+    }
+    @media screen  and (min-width: 1280px) {
+      display: none;
+    }
   }
   &__call-icon {
     width: 14.39px;

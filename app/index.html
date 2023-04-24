@@ -12,6 +12,9 @@
   <link rel="preload" href="fonts/HeraclitoMedium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/HeraclitoSemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/HeraclitoLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
   <script defer src="js/main.js"></script>
@@ -43,8 +46,165 @@
   </div>
 </header>
 
-    <main>
+    <main class="main">
+      <section class="banner">
+  <div class="container">
+    <h1 class="banner__title">Авторский курс<br/>по пересадке<br/>волос</h1>
+    <p class="banner__description"><span></span>Вам не нужно ехать в Грузию, стоимость обучения для врачей и ассистентов. обучения для врачей и ассистентов.</p>
+    <div class="banner__more-info">
+      <span>Подробнее о курсе</span>
+      <svg class="banner__icon">
+        <use xlink:href="img/sprite.svg#array-up"></use>
+      </svg>
+    </div>
+    <div class="banner__picture">
+      <img class="banner__img" src="img/banner.jpg" alt="picture" />
+    </div>
+    <p class="banner__description banner__description--center">Обучение по трансплантации волос включает все аспекты — теорию и практику.По окончанию обучения выдается сертификат</p>
+  </div>
+</section>
+      <section class="service">
+  <div class="container">
+    <div class="service__inner">
+      <div class="service__item">
+        <div class="service__top">О курсе</div>
+        <p class="service__description">Мы обучаем только современные методам и стандартам трансплантации волос в Мире</p>
+        <div class="service__slider">
 
+        </div>
+        <div class="service__cards">
+          <div class="service__card">
+             <h5 class="service__card-title">Образовательный курс для врачей</h5>
+             <button class="service__card-btn">
+              <svg class="service__card-icon">
+                <use xlink:href="img/sprite.svg#array-down"></use>
+              </svg>
+              <span>PDF</span>
+            </button>
+            <p class="service__card-text">Кто хочет освоить лучшие достижения мировой практики трансплантации волос и самостоятельно проводить процедуры пересадки с эффективным результатом.</p>
+          </div>
+          <div class="service__card">
+            <h5 class="service__card-title">Длительность курса 4-5 дней</h5>
+            <button class="service__card-btn">
+             <svg class="service__card-icon">
+               <use xlink:href="img/sprite.svg#array-down"></use>
+             </svg>
+             <span>PDF</span>
+           </button>
+           <p class="service__card-text">После окончания обучения врач обладает всеми необходимыми навыками для самостоятельно работы с пациентами.</p>
+         </div>
+        </div>
+        <button class="service__btn">Подробнее о курсе</button>
+      </div>
+
+      <div class="service__item">
+        <div class="service__top">преимущества</div>
+        <div class="service__edge">
+          <p class="service__description service__description--medium">Благодаря большому объему практических занятий, <span class="service__description-strong">врач на 100% готов к самостоятельной работе</span> с пациентом по окончанию курса</p>
+          <div class="service__box">
+            <div class="service__box-item">
+              <p class="service__box-number">300 +</p>
+              <p class="service__box-text">Обученный докторов по всему миру</p>
+            </div>
+            <div class="service__box-item">
+              <p class="service__box-number">6</p>
+              <p class="service__box-text">Современных методик пересадки</p>
+            </div>
+            <div class="service__box-item">
+              <p class="service__box-number">36 +</p>
+              <p class="service__box-text">Образовательных часов</p>
+            </div>
+            <div class="service__box-item">
+              <p class="service__box-number">100%</p>
+              <p class="service__box-text">Готовность к самостоятельной работе</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service__item service__item--light ">
+        <div class="service__top service__top--light">o преподавателе курса</div>
+        <p class="service__description service__description--course">Акакий Заурович Цилосани</p>
+        <p class="service__name">Доктор медицинских наук, Профессор </p>
+        <div class="service__text-info">Признанный во всем мире эксперт в области восстановления волос. Проводит обучение хирургов в разных странах мира, а теперь и в России, только в Инновационном Институте HAIR&SKIN.</div>
+        <div class="service__text-info">Профессор Американской Академии Эстетической медицины, член Международного Общества Восстановительной Хирургии Волос (ISHRS), Азиатской Ассоциации Восстановительной Хирургии Волос (AAHRS).</div>
+        <button class="service__btn-course">Подробнее о преподавателе</button>
+        <img src="img/portrait.png" alt="" class="service__portrait">
+        <div class="service__text-slide">
+
+        </div>
+      </div>
+
+      <div class="service__item service__item--light ">
+        <div class="service__top service__top--light">О клинике</div>
+        <h5 class="service__text-h2">Инновационный Институт HAIR & SKIN</h5>
+        <p class="service__description service__description--course">Специализируется на пересадке волос, оздоровлении волос и кожи и предлагает медицинский комплексный подход к решению задач красоты и здоровья.</p>
+        <div class="service__text-info service__text-info--muted">Наш оздоровительный центр был создан для требовательных пациентов, которые ценят сочетание современного медицинского подхода и последних достижений в мире эстетики.</div>
+        <div class="service__text-info service__text-info--muted">Команда докторов профессионалов клиники подбирает решение для каждого пациента, учитывая взаимосвязь всех процессов, происходящих в организме. Новейшее диагностическое оборудование, уникальный опыт и высокий профессонализм позволяют врачам выявить причину ухудшения качества волос и кожи и составить индивидуальный комплексный план лечения.</div>
+        <div class="service__btn-info">
+          <span>Узнать больше</span>
+          <svg class="banner__icon">
+            <use xlink:href="img/sprite.svg#array-up"></use>
+          </svg>
+        </div>
+        <div class="service__course-slider">
+
+        </div>
+      </div>
+
+      <div class="service__item service__item--light ">
+        <div class="service__top service__top--light">ДАТЫ КУРСА</div>
+        <div class="service__schedule">
+          <div class="service__schedule-card">
+            <p class="service__schedule-date">23 — 28 МАРТА, 2023</p>
+            <span class="service__schedule-hour">(10:00 — 18:00)</span>
+            <ul>
+              <li class="service__schedule-list-step">Процедуры пересадки волос</li>
+              <li class="service__schedule-list-step">Учебные курсы</li>
+              <li class="service__schedule-list-step">Группа укомплектована</li>
+            </ul>
+            <button class="service__schedule-btn">Посмотреть информацию</button>
+          </div>
+          <div class="service__schedule-card">
+            <p class="service__schedule-date">23 — 28 МАРТА, 2023</p>
+            <span class="service__schedule-hour">(10:00 — 18:00)</span>
+            <ul>
+              <li class="service__schedule-list-step">Процедуры пересадки волос</li>
+              <li class="service__schedule-list-step">Учебные курсы</li>
+              <li class="service__schedule-list-step">Группа укомплектована</li>
+            </ul>
+            <button class="service__schedule-btn">Посмотреть информацию</button>
+          </div>
+          <div class="service__schedule-card">
+            <p class="service__schedule-date">23 — 28 МАРТА, 2023</p>
+            <span class="service__schedule-hour">(10:00 — 18:00)</span>
+            <ul>
+              <li class="service__schedule-step">Процедуры пересадки волос</li>
+              <li class="service__schedule-step">Учебные курсы</li>
+              <li class="service__schedule-step">Группа укомплектована</li>
+            </ul>
+            <button class="service__schedule-btn">Посмотреть информацию</button>
+          </div>
+        </div>
+        <div class="service__schedule-video">
+
+        </div>
+      </div>
+
+      <div class="service__item service__item--light ">
+        <div class="service__top service__top--light">опыт и практика</div>
+        <h5 class="service__text-h2">Инновационный Институт HAIR & SKIN</h5>
+        <ul>
+          <li class="service__schedule-step">Обучающиеся изучают обязанности ассистента хирурга (препарирование графтов под стереомикроскопами и их имплантация)</li>
+          <li class="service__schedule-step">Будут ассистировать в операции доктора Цилосани, также ученик сам проводит операцию, а доктор и его команда помогают ему</li>
+          <li class="service__schedule-step">Примут участие в 6-8 операциях, где извлекут и имплантируют графты</li>
+        </ul>
+        <button class="service__btn-course">Подробнее о курсе</button>
+      </div>
+
+    </div>
+  </div>
+</section>
     </main>
     <footer class="footer">
   <div class="container"></div>
