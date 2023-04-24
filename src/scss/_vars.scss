@@ -1,0 +1,28 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Lato", sans-serif;
+  --content-width: 1170px;
+  //--container-offset: 15px;
+  //--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  // colors
+  //--light-color: #fff;
+}
+
+//COLORS
+$grey: #7A7979;
+$grey_light: #BDBDBD;  
+$grey_dark: #4A4A4A;
+$black: #212020;
+$main_blue: #1F93AE;
+$extra_blue: #026C83;
+$white: #ffffff;
+
+//FONTS FAMILY
+$font_Heraclito:"Heraclito", sans-serif;
+
+//
+$test:#adc
+   
+ 

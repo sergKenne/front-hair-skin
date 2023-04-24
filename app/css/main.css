@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+:root {
+  --font-family: "Lato", sans-serif;
+  --content-width: 1170px;
+}
+
+/* stylelint-disable */ /* stylelint-disable */ /* stylelint-disable */
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1;
+}
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px;
+}
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* stylelint-disable */ /* stylelint-disable */ /* stylelint-disable value-keyword-case */
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/../fonts/MullerRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heraclito";
+  src: url("../fonts/../fonts/HeraclitoRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heraclito";
+  src: url("../fonts/../fonts/HeraclitoMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heraclito";
+  src: url("../fonts/../fonts/HeraclitoSemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heraclito";
+  src: url("../fonts/../fonts/HeraclitoBold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Heraclito";
+  src: url("../fonts/../fonts/HeraclitoThin.woff2") format("woff2");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.body {
+  height: 100%;
+  font-family: var(--font-family, sans-serif);
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1220px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 1600px;
+  min-height: 100%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.is-hidden {
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+.header__logo-text {
+  width: 106.78px;
+  height: 35.6px;
+}
+.header__btn {
+  background: #1F93AE;
+  color: #ffffff;
+  border-radius: 12px;
+  width: 264px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-family: "Heraclito", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.header__burger, .header__call {
+  width: 30px;
+  height: 27px;
+  border-radius: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.header__call {
+  border: 1.5px solid #1F93AE;
+}
+.header__call-icon {
+  width: 14.39px;
+  height: 14.39px;
+  fill: #1F93AE;
+}
+.header__burger {
+  color: #ffffff;
+  background-color: #1F93AE;
+  margin-left: 12px;
+  gap: 3.7px;
+}
+.header__burger span {
+  width: 18px;
+  height: 1.5px;
+  background: #FFFFFF;
+  border-radius: 30px;
+}
+
+.main-h2 {
+  color: 6rem;
+  font-size: 3rem;
+  font-family: "Heraclito", sans-serif;
+  font-weight: 200;
+}
+/*# sourceMappingURL=main.css.map */
