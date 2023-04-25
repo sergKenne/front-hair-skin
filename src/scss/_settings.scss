@@ -23,6 +23,10 @@ html {
   padding-right: 10px;
   margin: 0 auto;
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  @media screen  and (min-width: 768px) {
+      padding-left: 38px;
+      padding-right: 38px;
+  }
 }
 
 .page {

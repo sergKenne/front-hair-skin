@@ -124,12 +124,20 @@
 
       <div class="service__item service__item--light ">
         <div class="service__top service__top--light">o преподавателе курса</div>
-        <p class="service__description service__description--course">Акакий Заурович Цилосани</p>
-        <p class="service__name">Доктор медицинских наук, Профессор </p>
-        <div class="service__text-info">Признанный во всем мире эксперт в области восстановления волос. Проводит обучение хирургов в разных странах мира, а теперь и в России, только в Инновационном Институте HAIR&SKIN.</div>
-        <div class="service__text-info">Профессор Американской Академии Эстетической медицины, член Международного Общества Восстановительной Хирургии Волос (ISHRS), Азиатской Ассоциации Восстановительной Хирургии Волос (AAHRS).</div>
-        <button class="service__btn-course">Подробнее о преподавателе</button>
-        <img src="img/portrait.png" alt="" class="service__portrait">
+        <div class="service__wrap-item">
+          <div class="service__wrap-item-desc">
+            <p class="service__description service__description--course">Акакий Заурович Цилосани</p>
+            <p class="service__name">Доктор медицинских наук, Профессор </p>
+            <div class="service__text-info">Признанный во всем мире эксперт в области восстановления волос. Проводит обучение хирургов в разных странах мира, а теперь и в России, только в Инновационном Институте HAIR&SKIN.</div>
+            <div class="service__text-info">Профессор Американской Академии Эстетической медицины, член Международного Общества Восстановительной Хирургии Волос (ISHRS), Азиатской Ассоциации Восстановительной Хирургии Волос (AAHRS).</div>
+            <button class="service__btn-course">Подробнее о преподавателе</button>
+          </div>
+          <div class="service__wrap-item-portrait">
+            <img src="img/portrait.png" alt="" class="service__portrait">
+            <img src="img/hair-skin.png" alt="" class="service__bg-hair-skin">
+          </div>
+        </div>
+
         <div class="service__text-slide">
 
         </div>
@@ -138,7 +146,7 @@
       <div class="service__item service__item--light ">
         <div class="service__top service__top--light">О клинике</div>
         <h5 class="service__text-h2">Инновационный Институт HAIR & SKIN</h5>
-        <p class="service__description service__description--course">Специализируется на пересадке волос, оздоровлении волос и кожи и предлагает медицинский комплексный подход к решению задач красоты и здоровья.</p>
+        <p class="service__description service__description--clinic">Специализируется на пересадке волос, оздоровлении волос и кожи и предлагает медицинский комплексный подход к решению задач красоты и здоровья.</p>
         <div class="service__text-info service__text-info--muted">Наш оздоровительный центр был создан для требовательных пациентов, которые ценят сочетание современного медицинского подхода и последних достижений в мире эстетики.</div>
         <div class="service__text-info service__text-info--muted">Команда докторов профессионалов клиники подбирает решение для каждого пациента, учитывая взаимосвязь всех процессов, происходящих в организме. Новейшее диагностическое оборудование, уникальный опыт и высокий профессонализм позволяют врачам выявить причину ухудшения качества волос и кожи и составить индивидуальный комплексный план лечения.</div>
         <div class="service__btn-info">
@@ -158,7 +166,7 @@
           <div class="service__schedule-card">
             <p class="service__schedule-date">23 — 28 МАРТА, 2023</p>
             <span class="service__schedule-hour">(10:00 — 18:00)</span>
-            <ul>
+            <ul class="service__schedule-list">
               <li class="service__schedule-list-step">Процедуры пересадки волос</li>
               <li class="service__schedule-list-step">Учебные курсы</li>
               <li class="service__schedule-list-step">Группа укомплектована</li>
@@ -168,7 +176,7 @@
           <div class="service__schedule-card">
             <p class="service__schedule-date">23 — 28 МАРТА, 2023</p>
             <span class="service__schedule-hour">(10:00 — 18:00)</span>
-            <ul>
+            <ul class="service__schedule-list">
               <li class="service__schedule-list-step">Процедуры пересадки волос</li>
               <li class="service__schedule-list-step">Учебные курсы</li>
               <li class="service__schedule-list-step">Группа укомплектована</li>
@@ -178,10 +186,10 @@
           <div class="service__schedule-card">
             <p class="service__schedule-date">23 — 28 МАРТА, 2023</p>
             <span class="service__schedule-hour">(10:00 — 18:00)</span>
-            <ul>
-              <li class="service__schedule-step">Процедуры пересадки волос</li>
-              <li class="service__schedule-step">Учебные курсы</li>
-              <li class="service__schedule-step">Группа укомплектована</li>
+            <ul class="service__schedule-list">
+              <li class="service__schedule-list-step">Процедуры пересадки волос</li>
+              <li class="service__schedule-list-step">Учебные курсы</li>
+              <li class="service__schedule-list-step">Группа укомплектована</li>
             </ul>
             <button class="service__schedule-btn">Посмотреть информацию</button>
           </div>
@@ -194,12 +202,103 @@
       <div class="service__item service__item--light ">
         <div class="service__top service__top--light">опыт и практика</div>
         <h5 class="service__text-h2">Инновационный Институт HAIR & SKIN</h5>
-        <ul>
-          <li class="service__schedule-step">Обучающиеся изучают обязанности ассистента хирурга (препарирование графтов под стереомикроскопами и их имплантация)</li>
-          <li class="service__schedule-step">Будут ассистировать в операции доктора Цилосани, также ученик сам проводит операцию, а доктор и его команда помогают ему</li>
-          <li class="service__schedule-step">Примут участие в 6-8 операциях, где извлекут и имплантируют графты</li>
+        <ul class="service__schedule-list service__schedule-list--pratice">
+          <li class="service__schedule-list-step">Обучающиеся изучают обязанности ассистента хирурга (препарирование графтов под стереомикроскопами и их имплантация)</li>
+          <li class="service__schedule-list-step">Будут ассистировать в операции доктора Цилосани, также ученик сам проводит операцию, а доктор и его команда помогают ему</li>
+          <li class="service__schedule-list-step">Примут участие в 6-8 операциях, где извлекут и имплантируют графты</li>
         </ul>
-        <button class="service__btn-course">Подробнее о курсе</button>
+        <img src="img/schedule-banner.jpg" alt="image" class="service__schedule-image">
+        <div class="service__step-cards">
+          <div class="service__step-card-item">
+            <img src="img/step1.jpg" alt="" class="service__step-card-img">
+            <p class="service__step-card-text">Помощь в покупке оборудования и запуске бизнеса</p>
+          </div>
+          <div class="service__step-card-item">
+            <img src="img/step2.jpg" alt="" class="service__step-card-img">
+            <p class="service__step-card-text">Индивидуальный подбор моделей</p>
+          </div>
+          <div class="service__step-card-item">
+            <img src="img/step3.jpg" alt="" class="service__step-card-img">
+            <p class="service__step-card-text">Индивидуальный подбор моделей</p>
+          </div>
+        </div>
+        <button class="service__btn-course service__btn-course--practice">Подробнее о курсе</button>
+      </div>
+
+      <div class="service__item service__item--light ">
+        <div class="service__top service__top--light">
+          <span>Отзывы о курсе</span>
+          <div class="service__btn-info service__btn-info--review">
+            <span>Все отзывы</span>
+            <svg class="banner__icon">
+              <use xlink:href="img/sprite.svg#array-up"></use>
+            </svg>
+          </div>
+        </div>
+        <h5 class="service__text-h2">Прочитайте, что говорят специалисты прошедшие обучение</h5>
+        <div class="service__card-slide-inner">
+          <div class="service__card-slide">
+            <div class="service__card-slide-head">
+              <div class="service__card-slide-avatar">НИ</div>
+              <div>
+                <p class="service__card-slide-name">Надежда Иванова</p>
+                <span class="service__card-slide-status">Врач-трихолог.</span>
+              </div>
+            </div>
+            <div class="service__card-slide-body">
+              <p class="service__card-slide-text">Прошла курс по пересадке волос и я просто в восторге! Сначала была волнительна, но наш преподаватель смог успокоить меня и ответил на все мои </p>
+              <button class="service__card-slide-btn">Читать весь отзыв</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="service__item service__item--light ">
+        <div class="service__top service__top--light">
+          <span>новости/Блог</span>
+          <div class="service__btn-info service__btn-info--review">
+            <span>Все новости</span>
+            <svg class="banner__icon">
+              <use xlink:href="img/sprite.svg#array-up"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="service__blog">
+          <div class="service__blog-item">
+            <img src="img/blog1.jpg" alt="" class="service__blog-img">
+            <div class="service__blog-body">
+              <h6 class="service__blog-title">5 современных методов имплантации волос</h6>
+              <p class="service__blog-text">В статье описываются пять современных и эффективных методов восстановления волос, включая их преимущества и недостатки.</p>
+              <div class="service__blog-footer">
+                <span>#Рубрика 1</span>
+                <span class="service__blog-date">22 марта, 2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="service__blog-item">
+            <img src="img/blog2.jpg" alt="" class="service__blog-img">
+            <div class="service__blog-body">
+              <h6 class="service__blog-title">5 современных методов имплантации волос</h6>
+              <p class="service__blog-text">В статье описываются пять современных и эффективных методов восстановления волос, включая их преимущества и недостатки.</p>
+              <div class="service__blog-footer">
+                <span>#Рубрика 1</span>
+                <span class="service__blog-date">22 марта, 2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="service__blog-item">
+            <img src="img/blog3.jpg" alt="" class="service__blog-img">
+            <div class="service__blog-body">
+              <h6 class="service__blog-title">5 современных методов имплантации волос</h6>
+              <p class="service__blog-text">В статье описываются пять современных и эффективных методов восстановления волос, включая их преимущества и недостатки.</p>
+              <div class="service__blog-footer">
+                <span>#Рубрика 1</span>
+                <span class="service__blog-date">22 марта, 2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -207,7 +306,103 @@
 </section>
     </main>
     <footer class="footer">
-  <div class="container"></div>
+  <div class="footer__form">
+    <div class="container">
+      <div class="footer__form-content">
+        <form action="" class="footer__form-group">
+          <div class="footer__form-control">
+            <input type="text" class="footer__form-input" placeholder="Имя Фамилия">
+          </div>
+          <div class="footer__form-control">
+            <input type="text" class="footer__form-input" placeholder="Телефон">
+          </div>
+          <label for="ok" class="footer__form-label">
+            <input type="checkbox" id="ok">
+            <span class="footer__form-box"></span>
+            <span>Я принимаю условия <span style="color:#f2f2f2;">Политики конфиденциальности</span></span>
+          </label>
+          <button class="footer__form-submit">Оставить заявку на обучение</button>
+        </form>
+        <div class="footer__form-address">
+          <p class="footer__form-phone">+7 495 181-18-02</p>
+          <p class="footer__form-location">Москва, ул. Остоженка 25</p>
+          <p class="footer__form-location">метро Парк культуры</p>
+          <button class="footer__form-btn">
+            <span>Смотреть на карте</span>
+            <svg class="banner__icon">
+              <use xlink:href="img/sprite.svg#array-up"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__main-content">
+    <div class="container">
+      <div class="footer__inner-top">
+        <a href="footer__logo-link">
+          <img src="img/svg/logo-footer.svg" alt="logo" class="footer__logo">
+        </a>
+        <nav class="footer__nav">
+          <a href="" class="footer__nav-link">О курсе</a>
+          <a href="" class="footer__nav-link">Отзывы</a>
+          <a href="" class="footer__nav-link">О преподавателе</a>
+          <a href="" class="footer__nav-link">Блог</a>
+          <a href="" class="footer__nav-link">Портфолио</a>
+          <a href="" class="footer__nav-link">Контакты</a>
+        </nav>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link">
+           <img src="img/whatsapp.png" alt="" class="footer__social-img">
+          </a>
+          <a href="#" class="footer__social-link">
+            <img src="img/telegram.png" alt="" class="footer__social-img">
+          </a>
+          <a href="#" class="footer__social-link">
+            <img src="img/instagram.png" alt="" class="footer__social-img">
+          </a>
+          <a href="#" class="footer__social-link">
+            <img src="img/youtube.png" alt="" class="footer__social-img">
+          </a>
+        </div>
+        <!-- <div class="footer__social">
+          <a href="#" class="footer__social-link">
+            <svg class="footer__social-icon">
+              <use xlink:href="img/sprite.svg#whatsapps"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link">
+            <svg class="footer__social-icon">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link">
+            <svg class="footer__social-icon">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link">
+            <svg class="footer__social-icon">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </div> -->
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__copy-right">© Copyright 2018 — 2023 HAIR&SKIN Innovation institute</div>
+        <div class="footer__bottom-list">
+          <p>
+            <span>Обработка персональных данных</span>
+          </p>
+          <p>
+            <span>Лицензии и документы</span>
+          </p>
+        </div>
+        <a href="#" class="footer__author">Made by <span>Grokhotov</span></a>
+      </div>
+      <p class="footer__meta">Instagram (принадлежит Meta, признанной экстремистской и запрещенной в России)</p>
+    </div>
+  </div>
 </footer>
 
   </div>

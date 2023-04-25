@@ -1,5 +1,12 @@
 .banner {
   margin-top: 30px;
+  @media screen  and (min-width: 768px) {
+    margin-top: 58px;
+  }
+  @media screen  and (min-width: 1280px) {
+      margin-top: 70px;
+  }
+
   &__title {
     font-family: $font_Heraclito;
     font-weight: 500;
@@ -7,6 +14,17 @@
     line-height: 100%;
     color:$main_blue;
     margin-bottom: 30px;
+    @media screen  and (min-width: 768px) {
+      font-size: 90px;
+    }
+    @media screen  and (min-width: 1280px) {
+      font-size: 140px;
+      line-height: 140px;
+    }
+    @media screen  and (min-width: 1600px) {
+      font-size: 160px;
+      line-height: 100%;               
+    }
   }
   &__description {
     font-weight: 400;
@@ -19,6 +37,18 @@
     &--center {
       text-align: center;
       margin-bottom: 80px;
+      @media screen  and (min-width: 768px) {
+        width: 536px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+      }
+      @media screen  and (min-width: 1280px) {
+        width: 948px;
+        margin-bottom: 120px;
+        font-size: 24px;
+        line-height: 130%; 
+      }
     }
     span {
       display: inline-block;
@@ -48,6 +78,10 @@
     @media screen  and (min-width: 768px) {
       margin-left: 0;
       margin-right: 0; 
+      margin-bottom: 30px; 
+    }           
+    @media screen  and (min-width: 1600px) {
+       margin-bottom: 40px;            
     }
   }
   &__img {
