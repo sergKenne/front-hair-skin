@@ -62,7 +62,9 @@
 
 
 @mixin text-button() {
-  color:#000000; 
+  //color:#000000;
+  color: $main_blue;
+  fill: $main_blue; 
   transition: color .3s ease-in-out, border .3s ease-in-out;
   display: flex;
   //justify-content: center;
