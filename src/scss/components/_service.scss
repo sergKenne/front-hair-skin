@@ -7,6 +7,9 @@
     &--dark {
       background: $black;
       border-radius: 15px 15px 0px 0px;
+      @media screen  and (min-width: 768px) {
+        padding-top: 1px;
+      }
       &.no-raduis {
         border-radius: 0px;
       }
@@ -77,6 +80,7 @@
       @media screen  and (min-width: 768px) {
         flex: 1;
       }
+       
       @media screen  and (min-width: 1280px) {
         font-size: 25px;
         flex: 0 0 420px   ;
@@ -102,34 +106,326 @@
   &__description-strong {
     color: $main_blue 
   }
+
+  //SLIDER COURSE
   &__course-slider {
     margin-top: 52px;
+    min-height: 180px;
+    position: relative;
+
+    .swiper-wrapper {
+      height: 180px;
+      padding-bottom: 40px;
+      @media screen  and (min-width: 768px) {
+        height: 420px;
+      }
+      @media screen  and (min-width: 1280px) {
+        height: 600px;
+      }
+      img {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: 20px;
+    }
 
     .swiper-pagination-bullet {
-        width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,8px));
-        height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,8px));
-        display: inline-block;
-        border-radius: 50%;
-        background: var(--swiper-pagination-bullet-inactive-color,#000);
-        opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
-
-        //
-        border-radius: 0px;
-        border: 2px solid #1F93AE;
-        border-radius: 40px;
-        width: 14px;
-        height: 4px;
-        background: $main_blue;
+      border-radius: 40px;
+      width: 14px;
+      height: 2px;
+      background: $main_blue;
     }
 
     .swiper-pagination-bullet.swiper-pagination-bullet-active {
-      background: red;
-      border-color: red;
+      background: #145E6F;
+      border-color: #145E6F;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      display: none;
+      @media screen  and (min-width: 1280px) {
+        display: block;
+        height: 50px;
+        width: 50px;
+        background: #3CBAD9;
+        border-color: transparent;
+        border-radius: 100%;
+        border: none;
+        top: 563px;
+      }
+    }
+
+    .swiper-button-prev {
+
+      left: initial;  
+      right: 144px!important;
+     
+      @media screen  and (min-width: 1280px) {
+        &:after {
+          content: "←";
+          display: inline-block;
+          font-size: 2rem;
+          color: #ffffff;
+          position: relative;
+          bottom: -3px;
+          left: 8px;
+        }
+      }
+    }
+
+    .swiper-button-next {
+      @media screen  and (min-width: 1280px) {
+        &:after  {
+          content: "→";
+          display: inline-block;
+          font-size: 2rem;
+          color: #ffffff;
+          position: relative;
+          bottom: -3px;
+          left: 8px;
+        }
+      }
+    }
+
+    .swiper-pagination-fraction {
+      position: absolute;
+        bottom: 62px;
+        right: 0;
+        width: 100%;
+        font-size: 1.5rem;
+        font-family: $font_Heraclito;
+        text-align: right;
+        font-weight: 400;
+        color: #000;
+        padding-right: 80px;
     }
 
   }
-  &__slider {
+
+  //SLIDER REVIEW
+  &__review-slider {
+
+    margin-top: 52px;
+    min-height: 192px;
+    position: relative;
+    @media screen  and (min-width: 1280px) {
+      &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 350px;
+        background: linear-gradient(269.46deg, #F1F3F9 64.36%, rgba(241, 243, 249, 0) 100%);
+        transform: rotate(-180deg);
+        z-index: -1;
+      }
+
+      &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: -2px;
+        top: 0;
+        bottom: 0;
+        width: 350px;
+        background: linear-gradient(269.46deg, #F1F3F9 34.9%, rgba(255, 255, 255, 0.08) 100%);
+        z-index: 2;
+      }
+    }
+    .swiper-wrapper {
+      height: 192px;
+      padding-bottom: 40px;
+      @media screen  and (min-width: 768px) {
+        //height: 420px;
+      }
+      @media screen  and (min-width: 1280px) {
+        height: 291px;
+        margin-bottom: 80px;
+      }
+    }
+
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: 5px;
+    }
+
+    .swiper-pagination-bullet {
+      border-radius: 40px;
+      width: 14px;
+      height: 2px;
+      background: $main_blue;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background: #145E6F;
+      border-color: #145E6F;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+      display: none;
+      @media screen  and (min-width: 1280px) {
+        display: block;
+        height: 50px;
+        width: 50px;
+        background: #006D84;
+        border-color: transparent;
+        border-radius: 100%;
+        border: none;
+        top: 37px;
+        z-index: 10;
+      }
+    }
+
+    .swiper-button-prev {
+      z-index: 99!important;
+      left: 0px;
+      @media screen  and (min-width: 1280px) {
+        &:after {
+          content: "←";
+          display: inline-block;
+          font-size: 2rem;
+          color: #ffffff;
+          position: relative;
+          bottom: -3px;
+          left: 8px;
+        }
+      }
+    }
+
+    .swiper-button-next {
+      
+      z-index: 99!important;
+      @media screen  and (min-width: 1280px) {
+        left: 150px;
+        &:after  {
+          content: "→";
+          display: inline-block;
+          font-size: 2rem;
+          color: #ffffff;
+          position: relative;
+          bottom: -3px;
+          left: 8px;
+        }
+      }
+    }
+
+    .swiper-pagination-fraction {
+      position: absolute;
+        bottom: 358px;
+        right: 0;
+        width: 100%;
+        font-size: 1.5rem;
+        font-family: $font_Heraclito;
+        text-align: left;
+        font-weight: 400;
+        color: #000;
+        padding-right: 80px;
+        z-index: 9;
+        //background: red;
+        padding-left: 75px;
+    }
+  }
+
+  &__slider-thumbnail {
     margin-top: 40px;
+    //border: 2px solid red;
+    overflow: hidden;
+    margin-bottom: 10px;
+    @media screen  and (min-width: 1280px) {
+      display: grid;
+      grid-template-columns: 384px 1fr;
+    }
+
+
+    .swiper-button-next, .swiper-button-prev {
+      display: none;
+    }
+    
+    .gallery-top {
+        //height: 80%;
+        width: 100%;
+        margin-bottom: 30px;
+        position: relative;
+        @media screen  and (min-width: 1280px) {
+          border: 1px solid green;
+          width: inherit;
+          overflow: hidden;
+        }
+        &::after {
+          @media screen  and (min-width: 768px) {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0px;
+           
+            width: 204px;
+            height: 142px;
+            background: linear-gradient(269.46deg, #212020 14.58%, rgba(33, 32, 32, 0.54) 100%);
+            z-index: 9;
+          }
+        }
+    }
+    .gallery-thumbs {
+        //height: 20%;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        @media screen  and (min-width: 768px) {
+          width: 500px;
+          overflow-x: hidden;
+        }
+        @media screen  and (min-width: 1280px) {
+          height: 240px;
+          border: 1px solid red;
+          overflow:visible;
+          width: inherit;
+
+        }
+    }
+    .gallery-thumbs .swiper-slide {
+        //width: 20%;
+        width: auto;
+        height: 100%;
+        opacity: 0.4;
+    }
+    .gallery-thumbs .swiper-slide-active {
+        opacity: 1;
+
+        .service__slide-course {
+          color: #1F93AE;
+          border-bottom: 2px solid #1F93AE;
+        }
+    }
+  
+
+  }
+  &__slide-course {
+    font-family: $font_lato;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #BFBFBF;
+  }
+  &__slider-course-title {
+    font-family: $font_Heraclito;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+  &__slider-course-text {
+    font-family: $font_lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #D5D5D5;
   }
   &__cards {
     
@@ -228,24 +524,6 @@
     position: relative;
     display: block;
     width: 100%;
-    // &--light {
-    //   background-color: $white;
-    //   padding-top: 80px;
-    //   margin-left: -10px;
-    //   margin-right: -10px;
-    //   padding-left: 10px;
-    //   padding-right: 10px;
-    //   @media screen  and (min-width: 768px) {
-    //     padding-top: 100px;
-    //     margin-left: -40px;
-    //     margin-right: -40px;
-    //     padding-left: 40px;
-    //     padding-right: 40px;
-    //   }
-
-
-      
-    
   }
   &__wrap-item {
     
@@ -400,10 +678,7 @@
         }
       }
     }
-
   }
-  
- 
   &__btn-info {
     @include text-button;
 
@@ -535,7 +810,6 @@
     @media screen  and (min-width: 1280px) {
       flex: 1;
     }
-    
   }
   &__step-card-img {
     display: block;
@@ -558,10 +832,19 @@
   &__card-slide-inner {
 
   }
+  &__card-slider {
+    @media screen  and (min-width: 1280px) {
+      position: relative;
+    }
+  }
   &__card-slide-head {
     display: flex;
     align-items: center;
     margin-bottom: 14.5px;
+    @media screen  and (min-width: 1280px) {
+      position: absolute;
+      bottom: -40px;
+    }
   }
   &__card-slide-avatar {
     width: 41px;
@@ -577,6 +860,11 @@
     color: #F1F3F9;
     background: #006D84;
     margin-right: 16px;
+    @media screen  and (min-width: 1280px) {
+      height: 114px;
+      width: 114px;
+      font-size: 45.629px;
+    }
   }
   &__card-slide-name {
     font-family: $font_lato;
@@ -584,6 +872,9 @@
     font-size: 18px;
     line-height: 140%;
     color: #333333;
+    @media screen  and (min-width: 1280px) {
+      font-size: 20px;
+    }
   }
   &__card-slide-status {
     font-family: $font_lato;
@@ -591,6 +882,9 @@
     font-size: 12px;
     line-height: 14px;
     color: #BDBDBD;
+    @media screen  and (min-width: 1280px) {
+      font-size: 14px;
+    }
   }
   &__card-slide-text {
     font-family: $font_lato;
@@ -599,6 +893,10 @@
     line-height: 140%;
     color: #333333;
     margin-bottom: 15px;
+    @media screen  and (min-width: 1280px) {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
   }
   &__card-slide-btn {
     @include link-button;
