@@ -1,3 +1,16 @@
+
+@keyframes textSlide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+
+
 .service {
   
   //background: $black;
@@ -39,6 +52,7 @@
     }
   }
   &__edge {
+    //border: 1px solid red;
     @media screen  and (min-width: 768px) {
       display: flex;
       gap: 12px;
@@ -115,7 +129,7 @@
 
     .swiper-wrapper {
       height: 180px;
-      padding-bottom: 40px;
+      padding-bottom: 3px;
       @media screen  and (min-width: 768px) {
         height: 420px;
       }
@@ -129,8 +143,9 @@
       }
     }
 
-    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    .swiper-pagination1.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
       bottom: 20px;
+      text-align: center;
     }
 
     .swiper-pagination-bullet {
@@ -145,7 +160,7 @@
       border-color: #145E6F;
     }
 
-    .swiper-button-prev, .swiper-button-next {
+    .swiper-button-prev1, .swiper-button-next1 {
       display: none;
       @media screen  and (min-width: 1280px) {
         display: block;
@@ -155,16 +170,22 @@
         border-color: transparent;
         border-radius: 100%;
         border: none;
-        top: 563px;
+        top: 534px;
       }
     }
 
-    .swiper-button-prev {
+    .swiper-button-next1.swiper-button-disabled , 
+    .swiper-button-prev1.swiper-button-disabled {
+      opacity: .5;
+    }
 
-      left: initial;  
-      right: 144px!important;
-     
+    .swiper-button-prev1 {
+
       @media screen  and (min-width: 1280px) {
+
+        position: absolute;
+        right: 154px;
+        z-index: 99;
         &:after {
           content: "←";
           display: inline-block;
@@ -177,8 +198,11 @@
       }
     }
 
-    .swiper-button-next {
+    .swiper-button-next1 {
       @media screen  and (min-width: 1280px) {
+        position: absolute;
+        right: 12px;
+        z-index: 99;
         &:after  {
           content: "→";
           display: inline-block;
@@ -193,7 +217,7 @@
 
     .swiper-pagination-fraction {
       position: absolute;
-        bottom: 62px;
+        bottom: 30px;
         right: 0;
         width: 100%;
         font-size: 1.5rem;
@@ -202,6 +226,7 @@
         font-weight: 400;
         color: #000;
         padding-right: 80px;
+        z-index: 1;
     }
 
   }
@@ -212,32 +237,38 @@
     margin-top: 52px;
     min-height: 192px;
     position: relative;
-    @media screen  and (min-width: 1280px) {
-      &:after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 350px;
-        background: linear-gradient(269.46deg, #F1F3F9 64.36%, rgba(241, 243, 249, 0) 100%);
-        transform: rotate(-180deg);
-        z-index: -1;
-      }
+    
+    .swiper{
+     
+      @media screen  and (min-width: 1280px) {
+      
+        &:after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          left: -2px;
+          top: 0;
+          bottom: 0;
+          width: 350px;
+          background: linear-gradient(269.46deg, #F1F3F9 64.36%, rgba(241, 243, 249, 0) 100%);
+          transform: rotate(-180deg);
+          z-index: 1;
+        }
 
-      &:before {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        right: -2px;
-        top: 0;
-        bottom: 0;
-        width: 350px;
-        background: linear-gradient(269.46deg, #F1F3F9 34.9%, rgba(255, 255, 255, 0.08) 100%);
-        z-index: 2;
+        &:before {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          right: -2px;
+          top: 0;
+          bottom: 0;
+          width: 350px;
+          background: linear-gradient(269.46deg, #F1F3F9 34.9%, rgba(255, 255, 255, 0.08) 100%);
+          z-index: 2;
+        }
       }
     }
+
     .swiper-wrapper {
       height: 192px;
       padding-bottom: 40px;
@@ -247,6 +278,19 @@
       @media screen  and (min-width: 1280px) {
         height: 291px;
         margin-bottom: 80px;
+
+        &:after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          width: 350px;
+          background: linear-gradient(269.46deg, #F1F3F9 64.36%, rgba(241, 243, 249, 0) 100%);
+          transform: rotate(-180deg);
+          z-index: 1;
+        }
       }
     }
 
@@ -277,14 +321,14 @@
         border-radius: 100%;
         border: none;
         top: 37px;
-        z-index: 10;
+        z-index: 999;
       }
     }
 
     .swiper-button-prev {
-      z-index: 99!important;
-      left: 0px;
+      
       @media screen  and (min-width: 1280px) {
+
         &:after {
           content: "←";
           display: inline-block;
@@ -298,10 +342,10 @@
     }
 
     .swiper-button-next {
-      
-      z-index: 99!important;
+    
       @media screen  and (min-width: 1280px) {
         left: 150px;
+
         &:after  {
           content: "→";
           display: inline-block;
@@ -331,6 +375,7 @@
     }
   }
 
+  //SLIDER THUM
   &__slider-thumbnail {
     margin-top: 40px;
     //border: 2px solid red;
@@ -339,8 +384,9 @@
     @media screen  and (min-width: 1280px) {
       display: grid;
       grid-template-columns: 384px 1fr;
+      margin-top: 50px;
+      margin-bottom: 20px;
     }
-
 
     .swiper-button-next, .swiper-button-prev {
       display: none;
@@ -352,9 +398,10 @@
         margin-bottom: 30px;
         position: relative;
         @media screen  and (min-width: 1280px) {
-          border: 1px solid green;
+          //border: 1px solid green;
           width: inherit;
           overflow: hidden;
+          margin-top: 45px;
         }
         &::after {
           @media screen  and (min-width: 768px) {
@@ -365,7 +412,8 @@
             right: 0px;
            
             width: 204px;
-            height: 142px;
+            //height: 142px;
+            height: 100%;
             background: linear-gradient(269.46deg, #212020 14.58%, rgba(33, 32, 32, 0.54) 100%);
             z-index: 9;
           }
@@ -381,9 +429,11 @@
         }
         @media screen  and (min-width: 1280px) {
           height: 240px;
-          border: 1px solid red;
-          overflow:visible;
+          //border: 1px solid red;
+          overflow-x:visible;
+          overflow-y: hidden;
           width: inherit;
+          padding-right: 95px;
 
         }
     }
@@ -392,6 +442,9 @@
         width: auto;
         height: 100%;
         opacity: 0.4;
+        @media screen  and (min-width: 1280px) {
+          height: 30px;
+        }
     }
     .gallery-thumbs .swiper-slide-active {
         opacity: 1;
@@ -410,6 +463,10 @@
     font-size: 18px;
     line-height: 140%;
     color: #BFBFBF;
+    @media screen  and (min-width: 1280px) {
+      font-size: 25px;
+      padding-bottom: 6px;
+    }
   }
   &__slider-course-title {
     font-family: $font_Heraclito;
@@ -426,6 +483,10 @@
     font-size: 16px;
     line-height: 140%;
     color: #D5D5D5;
+
+    @media screen  and (min-width: 1280px) {
+      color: #7A7979;
+    }
   }
   &__cards {
     
@@ -440,12 +501,16 @@
     min-height: 356px;
     margin-bottom: 25px;
     font-family: $font_lato;
+    position: relative;
     @media screen  and (min-width: 768px) {
       flex: 1;
       margin-bottom: 30px;
     }
     @media screen  and (min-width: 1280px) {
       padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
   &__card-title {
@@ -469,6 +534,12 @@
     color: $main_blue;
     margin-bottom: 74px;
     transition: all .3s ease-in-out, border .3s ease-in-out;
+    @media screen  and (min-width: 1280px) {
+      width: 76px;
+      position: absolute;
+      top: 32px;
+      right: 30px;
+    }
     &:hover, &:hover svg {
       color: #19768B;
       border-color: #19768B;
@@ -499,6 +570,10 @@
     line-height: 160%;
     color: #4A7583;
     font-family: $font_lato;
+    @media screen  and (min-width: 1280px) {
+      width: 443px;
+      font-size: 18px;
+    }
   }
   &__btn {
     font-family: $font_Heraclito;
@@ -506,11 +581,15 @@
     font-size: 14px;
     width: 100%;
     height: 50px;
-    border: 2px solid #FFFFFF;
+    
     border-radius: 12px;
     line-height: 52px;
     text-transform: uppercase;
     margin-right: 5px;
+    
+    @include outlined-button;
+
+    border: 2px solid #FFFFFF;
     color: $white;
     @media screen  and (min-width: 1280px) {
       width: 448px;
@@ -553,8 +632,6 @@
       right: 0;
       display: block;
       width: 100%;
-      //width: 340px;
-      
     }
 
   }
@@ -590,14 +667,12 @@
     min-height: 187px;
     color:$white;
     margin-bottom: 15px;
-
   }
   &__box-number {
     font-family: $font_Heraclito;
     font-weight: 500;
     font-size: 40px;
     line-height: 100%;
-    
   }
   &__box-text {
     font-family: $font_lato;
@@ -650,6 +725,25 @@
       line-height: 140%;
       color: #717171;
     }
+  }
+  &__text-slide-inner {
+    background-color: #000;
+    height: 60px;
+  }
+  &__text-slide-content {
+    color: #ffffff;
+    height: 60px;
+    line-height: 60px;
+    font-family: $font_lato;
+    font-weight: 400;
+    font-size: 30px;
+    white-space: nowrap;
+
+    animation-duration: 6s;
+    animation-name: textSlide;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+    
   }
   &__btn-course {
     @include outlined-button;
@@ -772,6 +866,13 @@
     height: 180px;
     border: 1px solid;
     margin-top: 30px;
+    @media screen  and (min-width: 768px) {
+      height: 400px;
+      margin-top: 50px; 
+    }
+    @media screen  and (min-width: 1280px) {
+      height: 600px; 
+    }
   }
   &__schedule-image {
     margin-top: 30px;
@@ -779,11 +880,10 @@
     width: 100%;
     @media screen  and (min-width: 768px) {
       position: absolute;
-      top: 160px;
+      top: 27px;
       right: 40px;
       width: 40%;
-      //height: 16.6%;
-      height: 354px;
+      height: 387px;
     }
     @media screen  and (min-width: 1280px) {
       right: 40px;

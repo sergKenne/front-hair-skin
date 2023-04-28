@@ -48,6 +48,69 @@
   </div>
 </header>
 
+<aside class="side-menu sideMenu-js">
+   <div class="side-menu__inner">
+    <span class="side-menu__close-btn">
+     <img class="side-menu__close-svg" src="img/svg/close.svg" alt=""/>
+    </span>
+    <ul class="side-menu__list">
+     <li class="side-menu__list-item">
+       <a class="side-menu__list-link">О курсе</a>
+     </li>
+     <li class="side-menu__list-item">
+       <a class="side-menu__list-link">Портфолио</a>
+     </li>
+     <li class="side-menu__list-item">
+       <a class="side-menu__list-link">Отзывы</a>
+     </li>
+     <li class="side-menu__list-item">
+       <a class="side-menu__list-link">Блог</a>
+     </li>
+     <li class="side-menu__list-item">
+       <a class="side-menu__list-link">Контакты</a>
+     </li>
+    </ul>
+    <div class="side-menu__phone">+7 495 181-18-02</div>
+    <div class="side-menu__address">Москва, ул. Остоженка 25 метро Парк культуры</div>
+    <div class="side-menu__nav-list">
+    <a href="" class="side-menu__nav-link"><img class="side-menu__nav-icon" src="img/svg/social3.svg" alt=""></a>
+     <a href="" class="side-menu__nav-link"><img class="side-menu__nav-icon" src="img/svg/social1.svg" alt=""></a>
+     <a href="" class="side-menu__nav-link"><img class="side-menu__nav-icon" src="img/svg/social2.svg" alt=""></a>
+     <a href="" class="side-menu__nav-link"><img class="side-menu__nav-icon" src="img/svg/social4.svg" alt=""></a>
+    </div>
+   </div>
+</aside>
+
+<aside class="side-menu sideMenuRegister-js">
+
+  <div class="side-menu__inner side-menu__inner--register">
+    <span class="side-menu__close-btn close-register-js">
+      <img class="side-menu__close-svg" src="img/svg/close.svg" alt=""/>
+    </span>
+    <h6 class="side-menu__title">Записаться на обучение</h6>
+    <p class="side-menu__description">Оставьте заявку на обучение, и с Вами свяжется менеджер </p>
+    <div class="side-menu__form">
+      <form action="" class="footer__form-group">
+        <div class="footer__form-control">
+          <input type="text" class="footer__form-input" placeholder="Имя Фамилия">
+        </div>
+        <div class="footer__form-control">
+          <input type="text" class="footer__form-input" placeholder="Телефон">
+        </div>
+        <label for="ok" class="footer__form-label">
+          <input type="checkbox" id="ok">
+          <span class="footer__form-box">
+            <svg class="footer__form-box-icon">
+              <use xlink:href="img/sprite.svg#check-input"></use>
+            </svg>
+          </span>
+          <span>Я принимаю условия <span style="color:#f2f2f2;">Политики конфиденциальности</span></span>
+        </label>
+        <button class="footer__form-submit">Записаться на обучение</button>
+      </form>
+    </div>
+  </div>
+</aside>
     <main class="main">
       <section class="banner">
   <div class="container">
@@ -133,8 +196,8 @@
         </div>
         <div class="service__cards">
           <div class="service__card">
-              <h5 class="service__card-title">Образовательный курс для врачей</h5>
-              <button class="service__card-btn">
+            <h5 class="service__card-title">Образовательный курс для врачей</h5>
+            <button class="service__card-btn">
               <svg class="service__card-icon">
                 <use xlink:href="img/sprite.svg#array-down"></use>
               </svg>
@@ -161,7 +224,10 @@
       <div class="container">
         <div class="service__top">преимущества</div>
         <div class="service__edge">
-          <p class="service__description service__description--medium">Благодаря большому объему практических занятий, <span class="service__description-strong">врач на 100% готов к самостоятельной работе</span> с пациентом по окончанию курса</p>
+          <div style="border: 2p                                                              solid green" class="service__description service__description--medium">
+            <div style="position: sticky; top: 0;">Благодаря большому объему практических занятий, <span class="service__description-strong">врач на 100% готов к самостоятельной работе</span> с пациентом по окончанию курса</div>
+          </div>
+
           <div class="service__box">
             <div class="service__box-item">
               <p class="service__box-number">300 +</p>
@@ -203,8 +269,8 @@
       </div>
     </div>
 
-    <div class="" style="height: 60px; background: #000;">
-         text-slider
+    <div class="service__text-slide-inner" style="height: 60px; background: #000;">
+      <div class="service__text-slide-content">Мировой рекорд — максимальное количество перенесенных за одну сессию графтов. В результате 11-часовой процедуры пересажено 9 688 фолликулярных объединений, что составляет примерно 19 360 волос</div>
     </div>
 
     <div class="service__item">
@@ -242,9 +308,9 @@
                 <img src="img/slide.jpg" />
               </div>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination1"></div>
+            <div class="swiper-button-next1"></div>
+            <div class="swiper-button-prev1"></div>
           </div>
         </div>
       </div>
@@ -286,7 +352,7 @@
           </div>
         </div>
         <div class="service__schedule-video">
-
+          <img src="img/video.jpg" alt="video" style="display: block; width: 100%; height: 100%;">
         </div>
       </div>
     </div>
@@ -515,7 +581,11 @@
           </div>
           <label for="ok" class="footer__form-label">
             <input type="checkbox" id="ok">
-            <span class="footer__form-box"></span>
+            <span class="footer__form-box">
+              <svg class="footer__form-box-icon">
+                <use xlink:href="img/sprite.svg#check-input"></use>
+              </svg>
+            </span>
             <span>Я принимаю условия <span style="color:#f2f2f2;">Политики конфиденциальности</span></span>
           </label>
           <button class="footer__form-submit">Оставить заявку на обучение</button>

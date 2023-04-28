@@ -1,0 +1,196 @@
+ 
+
+ .side-menu {
+  background: $main_blue;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  left: -100%;
+  transition: left .2s linear;
+  &.show {
+    left: 0;
+  }
+  &__inner {
+    position: relative;
+    padding-top: 56px;
+    padding-left: 47px;
+    padding-bottom: 26px;
+    padding-right: 20px;
+    &--register {
+      padding-left: 10px;
+      padding-right: 10px;
+      @media screen  and (min-width: 768px) {
+        padding-top: 102px;
+        padding-left: 33px;
+        padding-right: 33px;
+      }
+      @media screen  and (min-width: 1280px) {
+        padding-top: 80px;
+        padding-left: 89px;
+        padding-right: 111px;
+      }
+      @media screen  and (min-width: 1600px) {
+        padding-top: 107px;
+        padding-left: 90px;
+        padding-right: 200px;
+      }
+    }
+    @media screen  and (min-width: 768px) {
+      padding-top: 102px;
+      padding-left: 89px;
+      padding-bottom: 89px;
+    }
+  }
+  &__close-btn {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFFFFF;
+    border-radius: 100%;
+    position: absolute;
+    right: 10px;
+    top: 32px;
+    cursor: pointer ;
+    @media screen  and (min-width: 768px) {
+      top: 58px;
+      right: 34px;
+      width: 44px;
+      height: 44px;
+    }     
+  }
+  &__close-svg {
+    height: 8px;
+    width: 8px;
+    @media screen  and (min-width: 768px) {
+     height: 18px;
+     width: 18px;
+    }
+  }
+
+
+  &__list {
+    margin-bottom: 35px;
+  }
+  &__list-item {
+    margin-bottom: 20px;
+    @media screen  and (min-width: 768px) {
+      margin-bottom: 35px;
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 15px;
+      width: 19px;
+      background: url(/img/svg/check.svg) no-repeat center/cover;
+      margin-left: -30px;
+      margin-right: 10px;
+      display: none;
+      
+    }
+    &:first-child::before{
+      display: inline-block;
+    }
+  }
+  &__list-link {
+    font-family: $font_Heraclito;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 120%;
+    color:#FFFFFF;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    cursor: pointer;
+    &:hover {
+      border-color: #FFFFFF;
+    }
+    @media screen  and (min-width: 768px) {
+      font-size: 30px; 
+      font-weight: 500;
+    }
+  }
+  &__phone {
+    font-family: $font_Heraclito;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+  &__address {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    @media screen  and (min-width: 768px) {
+      width: 212px;
+      margin-bottom: 40px;
+    }
+  }
+  &__nav-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  &__title {
+    font-family: $font_Heraclito;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+    @media screen  and (min-width: 768px) {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+    @media screen  and (min-width: 1600px) {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+  }
+  &__description {
+    font-family: $font_lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    @media screen  and (min-width: 768px) {
+      font-size: 18px;
+    }
+
+  }
+  .footer__form-input {
+    background: transparent;
+    color: #8FC9D7;
+    @media screen  and (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  .footer__form-submit {
+  
+    background: #FFFFFF;
+    color: $main_blue;
+    &:hover {
+      background-color: #19768B;
+      color: #FFFFFF;
+    }
+    
+    &:focus {
+      background-color: #145E6F;
+      color: #FFFFFF;  
+    }
+  
+    &:active {
+      background-color: #62B3C6;
+      color: #FFFFFF;
+    }
+
+  }
+
+ }

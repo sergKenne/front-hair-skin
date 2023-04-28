@@ -58,8 +58,8 @@
 
     input {
       display: none;
-      &:checked ~ .footer__form-box {
-        background-color: #F2F2F2;
+      &:checked ~ .footer__form-box .footer__form-box-icon{
+        opacity: 1;
       }
     }
   }
@@ -68,8 +68,16 @@
     height: 20px;
     border: 1px solid #F2F2F2;
     border-radius: 4px;
-    display: inline-block;
     margin-right: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__form-box-icon {
+    width: 13.4px;
+    height: 10.4px;
+    fill: #ffffff;
+    opacity: 0
   }
   &__form-submit {
     @include solid-button;
